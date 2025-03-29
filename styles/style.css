@@ -1,0 +1,30 @@
+:root
+{
+    --background-color:#f1e6d7;
+    --accpet-button-color:#7ed957;
+    --reject-button-color:#ff5757;
+    --text-and-border-color:#373737;
+}
+body
+{
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color:var(--text-and-border-color);
+}
+ul
+{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.menu
+{
+    position: fixed;
+    width: 30vw;
+}
+.input-section
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
