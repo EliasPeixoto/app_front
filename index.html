@@ -6,178 +6,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/script.js" defer></script>
 
         <title>Estacionator</title>
     </head>
     <body>
         <aside>
-            <div class="menu">
-                <h1>Estacionator</h1>
-                <div>
-                    <p>Receita</p>
-                    <p>Dinheiro</p>
-                    <p>Pix</p>
-                    <p>Crédito</p>
-                    <p>Débito</p>
+            <div class="menu_section">
+                <h1 class="menu_title">Estacionator</h1>
+                <div class="income_section">
+                    <p class="income">Receita</p>
+                    <p class="cash">Dinheiro:</p>
+                    <p class="pix">Pix:</p>
+                    <p class="credit">Crédito:</p>
+                    <p class="debit">Débito:</p>
                 </div>
-                <p>Entrada</p>
-                <div class="input-section">
-                    <label for=plate id="plate-label">Placa:</label>
-                    <input name="plate" id="plate-input">
-                    <label for="color" id="color-label">Cor:</label>
-                    <input name="color" id="color-input">
-                    <label for="model" id="model-label">Modelo:</label>
-                    <input name="model" id="model-input">
-                </div>
-                <div>
-                    <button>Adicionar</button>
-                    <button>Cancelar</button>
-                </div>
+                <div class = input_section>
+                    <p class="input_title">Entrada</p>
+                    <label class= "input_label" for="input_plate">Placa:</label>
+                    <input class="input_field" type="text" name="input_plate" id="input_plate" maxlength="7">
+                    <label class= "input_label" for="input_model">Modelo:</label>
+                    <input class="input_field" type="text" name="input_model" id="input_model">
+                    <label class= "input_label" for="input_color">Cor:</label>
+                    <input class="input_field" type="text" name="input_color" id="input_color">
+                    <div class = button_section>
+                        <button class="add_button" onclick="data_validation()">Adicionar</button>
+                        <button class="remove_button">Cancelar</button>
+                    </div>
+                </div>   
             </div>
         </aside>
-        <section>
-            <ul>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
-                <li>
-                    <p>TAV8C99</p>
-                    <p>Entrada:</p>
-                    <p>Permanência</p>
-                </li>
+        <section class="yard">
+            <ul class="yard_list" id="yard_list">
             </ul>
         </section>
+        <div class="hidden" id="checkout_section">
+            <p class="veicle_description" id="veicle_description"> TAV8C99 / Moto Preta</p>
+            <p class="checkin_date" id="checkin_date">Entrada: </p>
+            <p class="elapsed_time" id="elapsed_time">Permanência: </p>
+            <p class="price" id="price">Valor:</p>
+            <label for="payment_method">Método de Pagamento:</label>
+            <select name="payment_method" id="payment_method">
+                <option>Dinheiro</option>
+                <option>Pix</option>
+                <option>Débito</option>
+                <option>Crédito</option>
+            </select>
+            <button class="add_button">Pagar</button>
+            <button class="remove_button">Cancelar</button>
+        </div>
     </body>
 </html>

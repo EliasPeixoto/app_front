@@ -4,6 +4,9 @@
     --accpet-button-color:#7ed957;
     --reject-button-color:#ff5757;
     --text-and-border-color:#373737;
+    --title-size: 4rem;
+    --subtitle-size: 2.5rem;
+    --text-size:1.5rem;
 }
 body
 {
@@ -11,20 +14,146 @@ body
     display: grid;
     grid-template-columns: 1fr 2fr;
     color:var(--text-and-border-color);
+    font-size: var(--text-size);
 }
 ul
 {
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
-.menu
+.menu_section
 {
     position: fixed;
-    width: 30vw;
+    width: 25vw;
+    position-area: center left;
+    border-right: solid 0.25rem var(--text-and-border-color);
+    padding: 0 2rem;
+    
 }
-.input-section
+.menu_title
+{
+    text-align: center;
+    margin: 0;
+    font-size: var(--title-size);
+    padding-bottom: 2rem;
+}
+.income_section, .input_section
+{
+    text-align: left;
+    border: solid 0.25rem var(--text-and-border-color);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+.income,.input_title
+{
+    margin: 0;
+    font-size: var(--subtitle-size);
+    font-weight: 600;
+}
+.cash,.pix,.debit,.credit,.input_label,.button_section
+{
+    padding-top: 1rem;
+    margin: 0;
+}
+.input_section
 {
     display: grid;
     grid-template-columns: 1fr 2fr;
+}
+.input_title
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.input_field
+{
+    margin-top: 1rem;
+    background-color: var(--background-color);
+    border-radius: 2rem;
+}
+.button_section
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.add_button,.remove_button
+{
+    font-size: var(--text-size);
+    margin: 0;
+    text-align: center;
+    border-radius: 1rem;   
+
+}
+.add_button
+{
+    background-color: var(--accpet-button-color);
+}
+.remove_button
+{
+    background-color: var(--reject-button-color);
+}
+.yard
+{
+    padding-top: 6rem;
+}
+.veicle,.checkout_section
+{
+    display: grid;
+    gap:1rem;
+    padding: 1rem 2rem;
+    border: solid 0.25rem var(--text-and-border-color);
+    border-radius: 2rem;
+}
+.checkout_section
+{
+    background-color: var(--background-color);
+    z-index: 10000;
+    position: fixed;
+    position-area: center;
+    grid-template-columns: 1fr 1fr;
+}
+.veicle_description
+{
+    font-size: var(--subtitle-size);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0;
+    font-weight: 600;
+}
+.checkin_date,.elapsed_time,.price
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0;
+}
+#payment_method
+{
+    border-radius: 2rem;
+}
+.hidden
+{
+    display: none;
+}
+.veicle:hover
+{
+    background-color: var(--accpet-button-color);
+}
+.input_field:hover,.input_field:focus
+{
+    background-color: white;
+}
+.add_button:hover
+{
+    background-color: green;
+}
+.remove_button:hover
+{
+    background-color: red;
 }
