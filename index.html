@@ -14,14 +14,14 @@
         <aside>
             <div class="menu_section">
                 <h1 class="menu_title">Estacionator</h1>
-                <div class="income_section">
-                    <p class="income">Receita</p>
-                    <p class="cash">Dinheiro:</p>
-                    <p class="pix">Pix:</p>
-                    <p class="credit">Crédito:</p>
-                    <p class="debit">Débito:</p>
+                <div class="income_section" id="income_section">
+                    <p class="income" id="income">Receita</p>
+                    <p class="cash" id="cash">Dinheiro:</p>
+                    <p class="pix" id="pix">Pix:</p>
+                    <p class="debit" id="debit">Débito:</p>
+                    <p class="credit" id="credit">Crédito:</p>
                 </div>
-                <div class = input_section>
+                <form class = input_section id = "input_section">
                     <p class="input_title">Entrada</p>
                     <label class= "input_label" for="input_plate">Placa:</label>
                     <input class="input_field" type="text" name="input_plate" id="input_plate" maxlength="7">
@@ -31,9 +31,9 @@
                     <input class="input_field" type="text" name="input_color" id="input_color">
                     <div class = button_section>
                         <button class="add_button" onclick="data_validation()">Adicionar</button>
-                        <button class="remove_button">Cancelar</button>
+                        <button class="remove_button" onclick="clear_input()">Cancelar</button>
                     </div>
-                </div>   
+                </form>   
             </div>
         </aside>
         <section class="yard">
@@ -52,8 +52,8 @@
                 <option>Débito</option>
                 <option>Crédito</option>
             </select>
-            <button class="add_button">Pagar</button>
-            <button class="remove_button">Cancelar</button>
+            <button class="add_button" onclick="checkout_veicle()">Pagar</button>
+            <button class="remove_button" onclick="close_checkout()">Cancelar</button>
         </div>
     </body>
 </html>
